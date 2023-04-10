@@ -1,0 +1,95 @@
+@import "vars";
+@import "mixins";
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  header {
+    button {
+      &.menu {
+        width: 64px;
+        height: 64px;
+      }
+    }
+    .bg-shape {
+      width: 35%;
+    }
+    .logo-pda {
+      width: auto;
+    }
+    .logo-uala {
+      width: auto;
+    }
+  }
+
+  .close {
+    width: 30px !important;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .h1 {
+    @include fontStyle($fs-96, $bold, $c-negro);
+  }
+  .h2 {
+    @include fontStyle($fs-64, $bold, $c-negro);
+  }
+  .h3 {
+    @include fontStyle($fs-48, $bold, $c-negro);
+  }
+  .h4 {
+    @include fontStyle($fs-32, $bold, $c-negro);
+  }
+  .h5 {
+    @include fontStyle($fs-24, $medium, $c-negro);
+  }
+  .h6 {
+    @include fontStyle($fs-24, $ligth, $c-negro);
+  }
+  .h7 {
+    @include fontStyle($fs-19, $bold, $c-negro);
+  }
+  .body-1 {
+    @include fontStyle($fs-19, $regular, $C-gris-6D);
+  }
+  .body-2 {
+    @include fontStyle($fs-17, $regular, $c-gris-6A);
+  }
+  .body-3 {
+    @include fontStyle($fs-14, $regular, $c-gris-5E);
+  }
+  .body-4 {
+    @include fontStyle($fs-12, $regular, $c-gris-5E);
+  }
+  .main {
+    .position {
+      &__box {
+        width: 470px;
+        height: 470px;
+        padding: 35px;
+        .outer {
+          border: 20px solid $c-gris-f2;
+        }
+        svg {
+          width: 470px;
+          height: 470px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: none;
+        }
+      }
+    }
+    .pill {
+      height: 24px !important;
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}

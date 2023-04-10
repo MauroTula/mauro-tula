@@ -1,0 +1,32 @@
+@import "vars";
+@import "mixins";
+
+header {
+  .bg-shape {
+    width: 55%;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+  }
+  button {
+    &.menu {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: $c-blanco;
+      transition: all 0.3s ease;
+      &:hover {
+        opacity: 0.5;
+      }
+      img {
+        width: 65%;
+      }
+    }
+  }
+  .logo-uala {
+    width: 70%;
+  }
+  .logo-pda {
+    width: 50%;
+  }
+}

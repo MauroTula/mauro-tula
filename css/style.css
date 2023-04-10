@@ -1,0 +1,555 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+/* ----- FONT-FAMILY ----- */
+/* ----- SIZE----- */
+/* ----- WEIGHT ----- */
+/* ----- COLORS ----- */
+/* ----- SHADOWS ----- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 100px;
+}
+
+.h1--mobile {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.h2--mobile {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+.h2--mobile--regular {
+  font-size: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.h3--mobile {
+  font-size: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.h4--mobile {
+  font-size: 17px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.body-1--mobile {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6d7783;
+}
+.body-1--mobile--bold {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5e5e5e;
+}
+
+.body-2--mobile {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6a6a6a;
+}
+
+.box-shadow-20 {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+}
+.box-shadow-20-rounded {
+  border-radius: 8px;
+}
+.box-shadow-20-rounded-24 {
+  border-radius: 24px;
+}
+
+.box-shadow-4 {
+  box-shadow: 0px 2px 4px #c3c4ca;
+}
+.box-shadow-4-rounded {
+  border-radius: 8px;
+}
+
+button {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.h-10 {
+  height: 10%;
+}
+
+.h-20 {
+  height: 20%;
+}
+
+.h-30 {
+  height: 30%;
+}
+
+.h-40 {
+  height: 40%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.h-60 {
+  height: 60%;
+}
+
+.h-70 {
+  height: 70%;
+}
+
+.h-80 {
+  height: 80%;
+}
+
+.h-90 {
+  height: 90%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(106, 106, 106, 0.7411764706);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s ease-in-out;
+}
+.overlay .message-box {
+  opacity: 0;
+  visibility: hidden;
+  background: #ffffff;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+}
+.overlay .message-box strong {
+  color: #0075ff;
+}
+.overlay .message-box .close {
+  width: 15px;
+  cursor: pointer;
+}
+.overlay .message-box .close:hover {
+  opacity: 0.3;
+}
+.overlay.active {
+  z-index: 10;
+  visibility: visible;
+  opacity: 1;
+}
+.overlay.active .message-box {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ----- FONT-FAMILY ----- */
+/* ----- SIZE----- */
+/* ----- WEIGHT ----- */
+/* ----- COLORS ----- */
+/* ----- SHADOWS ----- */
+header .bg-shape {
+  width: 55%;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+}
+header button.menu {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+header button.menu:hover {
+  opacity: 0.5;
+}
+header button.menu img {
+  width: 65%;
+}
+header .logo-uala {
+  width: 70%;
+}
+header .logo-pda {
+  width: 50%;
+}
+
+/* ----- FONT-FAMILY ----- */
+/* ----- SIZE----- */
+/* ----- WEIGHT ----- */
+/* ----- COLORS ----- */
+/* ----- SHADOWS ----- */
+.main .user__pill-box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .user__pill-box .pill {
+  width: 18%;
+  height: 12px;
+  border-radius: 999px;
+  background: #f2f3f3;
+  box-shadow: 0px 2px 4px #c3c4ca;
+}
+.main .user__pill-box .pill.active {
+  background: #0075ff;
+}
+.main .position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .position__box {
+  position: relative;
+  max-width: fit-content;
+  width: 300px;
+  height: 300px;
+  transform: scale(1);
+  background: #ffffff;
+  margin: 0 auto;
+  border-radius: 100%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+.main .position__box .outer {
+  width: 100%;
+  height: 100%;
+  border: 12px solid #f2f3f3;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .position__box circle {
+  fill: none;
+  stroke: url(#gradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 1336;
+  stroke-dashoffset: 20;
+  transform-origin: center;
+  transform: rotate(270deg);
+  stroke-linecap: round;
+}
+.main .position__box svg {
+  width: 470px;
+  height: 470px;
+  position: absolute;
+  top: -84px;
+  transform: scale(0.6);
+}
+.main .position__line-arrow {
+  position: absolute;
+  bottom: -35px;
+  width: 80%;
+}
+.main .desarrollador {
+  width: fit-content;
+  margin: 0 auto;
+}
+.main .desarrollador__select {
+  background: #ffffff;
+  width: fit-content;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.main .desarrollador__select img {
+  transition: all 0.3s ease;
+}
+.main .desarrollador__select.active img {
+  transform: rotate(180deg);
+}
+.main .desarrollador .list-group {
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.main .desarrollador .list-group.active {
+  opacity: 1;
+  visibility: visible;
+}
+.main .desarrollador .list-group li.active {
+  background: #007efd;
+  color: #ffffff;
+}
+.main .desarrollador .list-group li:hover {
+  background: #007efd;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* ----- FONT-FAMILY ----- */
+/* ----- SIZE----- */
+/* ----- WEIGHT ----- */
+/* ----- COLORS ----- */
+/* ----- SHADOWS ----- */
+.detail__box {
+  padding: 20px;
+}
+.detail__box .h5 {
+  color: #6d7783;
+}
+.detail__box .h5.activo {
+  color: #ff6819;
+}
+.detail__box .accordeon {
+  cursor: pointer;
+}
+.detail__box .accordeon img {
+  transition: all 0.3s ease;
+}
+.detail__box .accordeon.open img {
+  transform: rotate(180deg);
+}
+.detail__box .accordeon:hover > h5 {
+  color: #ff6819;
+}
+.detail__box .accordion-body {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+  padding: 0;
+}
+.detail__box .accordion-body.show {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
+.detail__progress-bar {
+  position: relative;
+  width: 100%;
+  height: 17px;
+  border-radius: 50px;
+  background: #c3c4ca;
+  margin-bottom: 80px;
+}
+.detail__progress-bar .detail__progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background: #ff6819;
+}
+.detail__progress-bar .detail__progress .detail__bullet {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+}
+.detail__progress-bar .detail__progress .detail__bullet-text {
+  position: absolute;
+  margin-top: 20px;
+}
+.detail__progress-bar .detail__progress .detail__bullet:hover {
+  border: 2px solid #ffffff;
+  background: #0075ff;
+  color: #0075ff;
+}
+.detail__progress-bar .detail__progress .detail__bullet:nth-child(1) {
+  margin-left: 20%;
+}
+.detail__progress-bar .detail__progress .detail__bullet:nth-child(2) {
+  margin-left: 30%;
+}
+.detail__progress-bar .detail__progress .detail__bullet:nth-child(3) {
+  margin-left: 60%;
+}
+.detail__progress-bar .detail__progress .detail__bullet:nth-child(4) {
+  margin-left: 75%;
+}
+.detail__progress-bar .detail__progress .detail__bullet:nth-child(5) {
+  margin-left: 80%;
+}
+.detail__progress-bar--muted {
+  position: relative;
+  width: 100%;
+  height: 17px;
+  border-radius: 50px;
+  background: #f2f3f3;
+}
+.detail__progress-bar--muted .detail__progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  border-radius: 50px;
+  background: #d5d7d9;
+}
+.detail__balance-box {
+  height: 143.5px;
+  margin-bottom: 40px;
+  width: 40px;
+}
+.detail__balance-box span {
+  line-height: 18px;
+  display: inline-block;
+  margin-top: 5px;
+}
+.detail__balance {
+  width: 17px;
+  border-radius: 50px;
+}
+.detail__balance--verde {
+  background: #9ff4f4;
+}
+.detail__balance--rosa {
+  background: #e6a0f2;
+}
+.detail__balance--naranja {
+  background: #ffbf47;
+}
+.detail__button {
+  background: #ffffff;
+  width: fit-content;
+  border-radius: 50px;
+  padding: 4px 16px;
+  color: #0075ff !important;
+  border: 2px solid #0075ff;
+  cursor: pointer;
+}
+
+/* ----- FONT-FAMILY ----- */
+/* ----- SIZE----- */
+/* ----- WEIGHT ----- */
+/* ----- COLORS ----- */
+/* ----- SHADOWS ----- */
+@media (min-width: 768px) {
+  header button.menu {
+    width: 64px;
+    height: 64px;
+  }
+  header .bg-shape {
+    width: 35%;
+  }
+  header .logo-pda {
+    width: auto;
+  }
+  header .logo-uala {
+    width: auto;
+  }
+  .close {
+    width: 30px !important;
+  }
+}
+@media (min-width: 992px) {
+  .h1 {
+    font-size: 96px;
+    font-weight: 700;
+    color: #000000;
+  }
+  .h2 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #000000;
+  }
+  .h3 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #000000;
+  }
+  .h4 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+  }
+  .h5 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000000;
+  }
+  .h6 {
+    font-size: 24px;
+    font-weight: 300;
+    color: #000000;
+  }
+  .h7 {
+    font-size: 19px;
+    font-weight: 700;
+    color: #000000;
+  }
+  .body-1 {
+    font-size: 19px;
+    font-weight: 400;
+    color: #6d7783;
+  }
+  .body-2 {
+    font-size: 17px;
+    font-weight: 400;
+    color: #6a6a6a;
+  }
+  .body-3 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #5e5e5e;
+  }
+  .body-4 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #5e5e5e;
+  }
+  .main .position__box {
+    width: 470px;
+    height: 470px;
+    padding: 35px;
+  }
+  .main .position__box .outer {
+    border: 20px solid #f2f3f3;
+  }
+  .main .position__box svg {
+    width: 470px;
+    height: 470px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+  .main .pill {
+    height: 24px !important;
+  }
+}
+/* ----- FONT-FAMILY ----- */
+/* ----- SIZE----- */
+/* ----- WEIGHT ----- */
+/* ----- COLORS ----- */
+/* ----- SHADOWS ----- */
+
+/*# sourceMappingURL=style.css.map */
